@@ -1,0 +1,38 @@
+html {
+  background: url('../img/texture2.jpg') repeat;
+  background-attachment: fixed;
+}
+body{
+    background: transparent;
+}
+md-card>:not(md-card-content) img, md-card>img {
+  width: 70%;
+  margin: 0 auto;
+}
+md-card {
+  min-height: 450px;
+  max-height: 450px;
+  md-card-title {
+    padding: 5px 16px 5px;
+    max-height: 85px;
+    min-height: 85px;
+  }
+  md-card-content {
+    padding-bottom: 0px;
+  }
+  md-card-content {
+    p {
+      min-height: 50px;
+    }
+  }
+}
+.md-headline {
+  font-size: 20px;
+}
+.price {
+  font-size: 1.3em;
+}
+a.md-default-theme:not(.md-button), a:not(.md-button) {
+  color: #337ab7;
+  text-decoration: none;
+}

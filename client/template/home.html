@@ -1,0 +1,18 @@
+<div class="panel panel-primary col-md-12">
+	<form name="searchForm" class="navbar-form navbar-left"
+		role="search" novalidate style="width:100%">
+			<md-input-container class="md-block">
+        <label>Enter URL</label>
+        <input name="url" ng-model="project.url" required>
+
+        <div ng-messages="searchForm.url.$error">
+          <div ng-message="required">Please enter a valid URL to continue.</div>
+        </div>
+      </md-input-container>
+			<md-button class="md-raised"
+				ng-disabled="searchForm.$invalid"
+				ng-click="save()">Fetch</md-button>
+			<p>
+	</form>
+	<!-- <div class="hint">Example: http://pf.tradetracker.net/?aid=1&type=xml&encoding=utf-8&fid=251713&categoryType=5&additionalType=2&limit=10</div> -->
+</div>
